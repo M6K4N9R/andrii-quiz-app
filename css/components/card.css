@@ -12,8 +12,8 @@
 
 .question-card {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
     margin-top: 1rem;
