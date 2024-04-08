@@ -7,3 +7,15 @@
   border: 0.1rem solid var(--primary-color);
   border-radius: 9px;
 }
+
+.bookmark {
+    position: relative;
+    float: right;
+    top: -2rem;
+    background-color: transparent;
+    border: none;
+}
+
+.bookmark img {
+    width: 3rem;
+}
