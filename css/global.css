@@ -28,6 +28,10 @@ html {
   --answer: 2.4rem;
 }
 
+body {
+  height: 100%;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -37,20 +41,18 @@ html {
   padding: 1rem;
 }
 
-.main {
-  height: 100vh;
-}
-
 footer {
-    background-color: var(--footer-color);
+  background-color: var(--footer-color);
+  position: relative;
+  bottom: 0px;
 }
 footer p {
-    display: block;
-    background-color: var(--acsent-color);
-    text-align: center;
-    color: var(--answer-color);
-    font-weight: bold;
-    padding: 0.2rem;
+  display: block;
+  background-color: var(--acsent-color);
+  text-align: center;
+  color: var(--answer-color);
+  font-weight: bold;
+  padding: 0.2rem;
 }
 
 .menu {
@@ -60,10 +62,9 @@ footer p {
   list-style: none;
   min-height: 2rem;
   padding: 1rem;
-  }
+}
 
-  .menu li a {
-    color: white;
-    text-decoration: none;
-    
-  }
+.menu li a {
+  color: white;
+  text-decoration: none;
+}

@@ -19,16 +19,22 @@
 }
 
 .card-container {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
     background-color: var(--primary-color);
     padding: 1rem;
+    gap: 2rem;
 }
 
-.questin-card {
+.question-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: center; 
+    align-items: center;
     padding: 2rem;
+    margin-top: 1rem;
 }
 
