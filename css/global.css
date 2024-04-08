@@ -48,7 +48,7 @@ footer p {
     display: block;
     background-color: var(--acsent-color);
     text-align: center;
-    color: var(--primary-color);
+    color: var(--answer-color);
     font-weight: bold;
     padding: 0.2rem;
 }

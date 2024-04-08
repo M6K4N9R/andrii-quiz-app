@@ -7,3 +7,27 @@
 @import "./components/header.css";
 
 @import "./components/navigation.css";
+
+.main-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin: 2rem 0
+}
+
+.card-container {
+    width: 80%;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.questin-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center; 
+    padding: 2rem;
+}
