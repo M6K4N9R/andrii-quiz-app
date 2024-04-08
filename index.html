@@ -14,7 +14,9 @@
       <section class="main-container">
         <section class="card-container">
           <article clas="question-card --one">
-            <div class="bookmark"></div>
+            <button class="bookmark" aria-label="Bookmark">
+                <img src="./resources/bookmark_transparent.png" alt="Bookmark this question" class="bookmark-img">
+            </button>
             <h2 class="question-text">
               What is the name of the coffee shop where the Friends gang
               frequently hangs out?
@@ -24,7 +26,7 @@
           </article>
           <div class="answer --one">
             <div class="bookmark"></div>
-            <h2 class="question"></h2>
+            <h3 class="question"></h3>
             <button class="hide-answer"></button>
             <p class="answer-text">Central Perk</p>
             <div class="categories"></div>
@@ -39,7 +41,7 @@
           </article>
           <div class="answer --two">
             <div class="bookmark"></div>
-            <h2 class="question"></h2>
+            <h3 class="question"></h3>
             <button class="hide-answer"></button>
             <p class="answer-text">Geller</p>
             <div class="categories"></div>
@@ -54,7 +56,7 @@
           </article>
           <div class="answer --three">
             <div class="bookmark"></div>
-            <h2 class="question"></h2>
+            <h3 class="question"></h3>
             <button class="hide-answer"></button>
             <p class="answer-text">Answer three</p>
             <div class="categories"></div>
@@ -62,15 +64,15 @@
         </section>
       </section>
       <footer>
-        <nav>
+        <nav aria-labelledby="menu">
           <ul class="menu">
-            <li class="home-page">
+            <li class="home-page" id="menu">
               <a href="./index.html">Home</a>
             </li>
-            <li class="bookmarks">
+            <li class="bookmarks" id="menu">
               <a href="./pages/bookmarks.html">Bookmarks</a>
             </li>
-            <li class="about">
+            <li class="about" id="menu">
               <a href="./pages/about.html">About</a>
             </li>
           </ul>
