@@ -1,20 +1,19 @@
-*, 
-::before, 
+*,
+::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-h1 {
-    color: chocolate;
-    background-color: aqua;
-}
+:root {
+    
+} 
