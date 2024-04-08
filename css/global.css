@@ -15,26 +15,43 @@ html {
 }
 
 :root {
+  /* ----- COLORS ----- */
+  --primary-color: #c8c6d7;
+  --question-color: #bfacc8;
+  --answer-color: #783f8e;
+  --footer-color: #4a4063;
+  --acsent-color: #4f1271;
 
-    /* ----- COLORS ----- */
-    --primary-color: #C8C6D7;
-    --question-color: #BFACC8;
-    --answer-color: #783F8E;
-    --footer-color: #4A4063;
-    --acsent-color: #4F1271;
-
-    /* ------ FONT ------ */
-    --question: 2.4rem;
-    --questin-answered: 1.8rem;
-    --answer: 2.4rem;
-    
-} 
+  /* ------ FONT ------ */
+  --question: 2.4rem;
+  --questin-answered: 1.8rem;
+  --answer: 2.4rem;
+}
 
 .header {
-    display: flex;
-    justify-content: center;
-    wrap: wrap;
-    background-color: var(--acsent-color);
+  display: flex;
+  justify-content: center;
+  wrap: wrap;
+  background-color: var(--acsent-color);
+  color: white;
+  padding: 1rem;
+}
+
+.main {
+  height: 100vh;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  background-color: var(--footer-color);
+  min-height: 2rem;
+  }
+
+  .menu li a {
     color: white;
-    padding: 1rem; 
+    text-decoration: none;
+    
   }
