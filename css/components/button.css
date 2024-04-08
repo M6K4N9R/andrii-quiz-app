@@ -9,6 +9,7 @@
 }
 
 .bookmark {
+    display: block;
     position: relative;
     float: right;
     top: -2rem;
@@ -16,8 +17,6 @@
     border: none;
 }
 
-
-
 .bookmark img {
-    width: 3rem;
+  width: 3rem;
 }
