@@ -9,12 +9,12 @@
 }
 
 .bookmark {
-    display: block;
-    position: relative;
-    float: right;
-    top: -2rem;
-    background-color: transparent;
-    border: none;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: -4rem;
+  right: -2rem;
 }
 
 .bookmark img {

@@ -16,5 +16,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
-    margin-top: 1rem;
+    gap: 2rem;
 }
+
+
