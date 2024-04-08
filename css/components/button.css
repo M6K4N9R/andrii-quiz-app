@@ -1,0 +1,9 @@
+.show-answer {
+  min-width: 5rem;
+  min-height: 2rem;
+  background-color: var(--acsent-color);
+  padding: 0.5rem 2rem;
+  color: white;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 9px;
+}
