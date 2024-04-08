@@ -41,13 +41,25 @@ html {
   height: 100vh;
 }
 
+footer {
+    background-color: var(--footer-color);
+}
+footer p {
+    display: block;
+    background-color: var(--acsent-color);
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  background-color: var(--footer-color);
   min-height: 2rem;
+  padding: 1rem;
   }
 
   .menu li a {
