@@ -28,14 +28,11 @@ html {
   --answer: 2.4rem;
 }
 
-body {
-  height: 100%;
-}
 
 .header {
   display: flex;
   justify-content: center;
-  wrap: wrap;
+  flex-wrap: wrap;
   background-color: var(--acsent-color);
   color: white;
   padding: 1rem;

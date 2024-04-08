@@ -10,31 +10,11 @@
 
 .main-container {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     gap: 2rem;
     margin: 2rem 0
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 90%;
-    background-color: var(--primary-color);
-    padding: 1rem;
-    gap: 2rem;
-}
-
-.question-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 1rem;
 }
 

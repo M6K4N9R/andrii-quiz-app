@@ -8,13 +8,15 @@
   border-radius: 9px;
 }
 
-.bookmark {
+/* .bookmark {
     position: relative;
     float: right;
     top: -2rem;
     background-color: transparent;
     border: none;
-}
+} */
+
+
 
 .bookmark img {
     width: 3rem;
