@@ -1,20 +1,55 @@
-*, 
-::before, 
+*,
+::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-h1 {
-    color: chocolate;
-    background-color: aqua;
+:root {
+  /* ----- COLORS ----- */
+  --primary-color: #c8c6d7;
+  --question-color: #bfacc8;
+  --answer-color: #783f8e;
+  --footer-color: #4a4063;
+  --acsent-color: #4f1271;
+
+  /* ------ FONT ------ */
+  --question: 2.4rem;
+  --questin-answered: 1.8rem;
+  --answer: 2.4rem;
 }
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--acsent-color);
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  position: relative;
+  bottom: 0px;
+}
+footer p {
+  display: block;
+  background-color: var(--acsent-color);
+  text-align: center;
+  color: var(--answer-color);
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+

@@ -1,2 +1,24 @@
 @import "./global.css";
 
+@import "./components/button.css";
+
+@import "./components/card.css";
+
+@import "./components/header.css";
+
+@import "./components/navigation.css";
+
+.main-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.answer {
+  /* display: none; */
+}
+
