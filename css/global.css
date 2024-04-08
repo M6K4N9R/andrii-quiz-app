@@ -15,5 +15,18 @@ html {
 }
 
 :root {
+
+    /* ----- COLORS ----- */
+    --primary-color: #C8C6D7;
+    --question-color: #BFACC8;
+    --answer-color: #783F8E;
+    --footer-color: #4A4063;
+    --acsent-color: #4F1271;
+
+    /* ------ FONT ------ */
+    --question: 2.4rem;
+    --questin-answered: 1.8rem;
+    --answer: 2.4rem;
     
+
 } 
