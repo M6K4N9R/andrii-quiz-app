@@ -19,13 +19,12 @@
 }
 
 .answer {
-  /* display: none; */
+  display: none;
 }
 
 /* ----- RESPONSIVE ------- */
 
 @media screen and (min-width: 1025px) {
-
   .main-container {
     flex-flow: row wrap;
     justify-content: space-evenly;
