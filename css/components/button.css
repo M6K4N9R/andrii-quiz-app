@@ -17,6 +17,17 @@
   right: -2rem;
 }
 
+.bookmark-checked {
+  
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: -9rem;
+  right: -2rem;
+}
+
+
 .bookmark img {
   width: 3rem;
 }
