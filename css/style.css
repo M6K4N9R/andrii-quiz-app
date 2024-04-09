@@ -43,6 +43,7 @@ h1 {
   }
 }
 
-h2 {
+.question-text {
   font-size: var(--question);
+  text-align: center;
 }
