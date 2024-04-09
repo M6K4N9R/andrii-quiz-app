@@ -8,6 +8,14 @@
 
 @import "./components/navigation.css";
 
+h1 {
+  font-size: 3.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 .main-container {
   display: flex;
   flex-flow: column;
@@ -15,7 +23,7 @@
   align-items: center;
   width: 100%;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: calc(3.6rem + 5rem) auto;
 }
 
 .answer {
@@ -28,7 +36,7 @@
   .main-container {
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 2rem 2rem;
+    margin: calc(3.6rem + 5rem) auto;
   }
 
   .card-container {
@@ -37,4 +45,11 @@
     padding: 1rem;
     gap: 2rem;
   }
+  
+  .question-text {
+    font-size: var(--question);
+    text-align: center;
+  }
 }
+
+
