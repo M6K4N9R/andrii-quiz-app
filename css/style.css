@@ -45,9 +45,11 @@ p {
     padding: 1rem;
     gap: 2rem;
   }
+  
+  .question-text {
+    font-size: var(--question);
+    text-align: center;
+  }
 }
 
-.question-text {
-  font-size: var(--question);
-  text-align: center;
-}
+
