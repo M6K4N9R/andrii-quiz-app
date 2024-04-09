@@ -27,7 +27,10 @@
   right: -2rem;
 }
 
-
 .bookmark img {
   width: 3rem;
+}
+
+.show-answer {
+  font-size: var(--button-text);
 }
