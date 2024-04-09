@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--acsent-color);
+    color: white;
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    position: relative;
+    bottom: 0px;
+  }
+  footer p {
+    display: block;
+    background-color: var(--acsent-color);
+    text-align: center;
+    color: var(--answer-color);
+    font-weight: bold;
+    padding: 0.2rem;
+  }
