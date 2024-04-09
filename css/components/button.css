@@ -13,7 +13,13 @@
   background-color: transparent;
   border: none;
   position: relative;
-  top: -4rem;
+  top: -1.5rem;
+  right: -2rem;
+}
+
+.--two .bookmark {
+  position: relative;
+  top: -2.8rem;
   right: -2rem;
 }
 
