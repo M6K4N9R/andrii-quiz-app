@@ -8,6 +8,10 @@
 
 @import "./components/navigation.css";
 
+h1 {
+  font-size: 3.6rem;
+}
+
 .main-container {
   display: flex;
   flex-flow: column;
@@ -15,7 +19,7 @@
   align-items: center;
   width: 100%;
   gap: 2rem;
-  margin: 2rem 0;
+  margin: calc(3.6rem + 5rem) auto;
 }
 
 .answer {
