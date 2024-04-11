@@ -38,13 +38,6 @@ p {
     justify-content: space-evenly;
     margin: calc(3.6rem + 5rem) auto;
   }
-
-  .card-container {
-    width: 45%;
-    background-color: var(--primary-color);
-    padding: 1rem;
-    gap: 2rem;
-  }
   
   .question-text {
     font-size: var(--question);
