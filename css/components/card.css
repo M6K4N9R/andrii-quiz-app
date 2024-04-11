@@ -9,7 +9,7 @@
   width: 90%;
 }
 
-.categories {
+.tags {
   margin-top: 2rem;
   padding-left: 1rem;
   align-self: flex-start;
@@ -18,11 +18,12 @@
   gap: 0.5rem;
 }
 
-.categories p {
+.tags li {
   background-color: var(--footer-color);
   font-size: 1.2rem;
   padding: 0.4rem;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
+  list-style: none;
 }
