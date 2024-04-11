@@ -6,6 +6,7 @@
   color: white;
   border: 0.1rem solid var(--primary-color);
   border-radius: 9px;
+  font-size: var(--button-text);
 }
 
 .bookmark {
@@ -17,20 +18,6 @@
   right: -2rem;
 }
 
-.bookmark-checked {
-  display: none;
-  align-self: flex-end;
-  background-color: transparent;
-  border: none;
-  position: relative;
-  top: -9rem;
-  right: -2rem;
-}
-
 .bookmark img {
   width: 3rem;
-}
-
-.show-answer {
-  font-size: var(--button-text);
 }
