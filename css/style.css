@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import "./global.css";
 
 @import "./components/button.css";
@@ -10,6 +12,12 @@
 
 h1 {
   font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin: 0 1.5rem;
+  text-align: center;
 }
 
 p {
@@ -26,7 +34,7 @@ p {
   margin: calc(3.6rem + 5rem) auto;
 }
 
-.answer {
+.answer-text {
   display: none;
 }
 
@@ -38,11 +46,9 @@ p {
     justify-content: space-evenly;
     margin: calc(3.6rem + 5rem) auto;
   }
-  
+
   .question-text {
     font-size: var(--question);
     text-align: center;
   }
 }
-
-
