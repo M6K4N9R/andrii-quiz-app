@@ -13,7 +13,7 @@
 
 footer {
   background-color: var(--primary-color);
-  position: fixed;
+  position: sticky;
   bottom: 0px;
   width: 100%;
   z-index: 1;
@@ -25,4 +25,11 @@ footer p {
   color: var(--answer-color);
   font-weight: bold;
   padding: 0.2rem;
+}
+
+nav .home-page:hover {
+  position: relative;
+  bottom: 2px;
+  /* padding-bottom: 2px; */
+  border-bottom: 2px solid var(--acsent-color);
 }
