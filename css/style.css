@@ -29,7 +29,8 @@ p {
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  min-height: 100vh;
   gap: 2rem;
   margin: calc(3.6rem + 5rem) auto;
 }
@@ -38,12 +39,25 @@ p {
   display: none;
 }
 
-/* ----- RESPONSIVE ------- */
+/* ============== RESPONSIVE =============== */
+
+/* ----------------- TABLET ---------------------*/
+
+@media screen and (min-width: 481px) {
+  .main-container {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 70%;
+  }
+}
+
+/* ----------------- DESKTOP ---------------------*/
 
 @media screen and (min-width: 1025px) {
   .main-container {
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 60%;
     margin: calc(3.6rem + 5rem) auto;
   }
 
