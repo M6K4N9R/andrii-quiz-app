@@ -27,11 +27,11 @@ nav .bookmarks:hover {
 }
 
 nav .home-page:active {
-  background-image: url("./resources"/home_filled.png);
+  background-image: url("./resources/home_filled.png");
 }
 nav .about:active {
-  background-image: url("./resources"/profile_filled.png);
+  background-image: url("./resources/profile_filled.png");
 }
 nav .bookmarks:active {
-  background-image: url("./resources"/bookmark_filled.png);
+  background-image: url("./resources/bookmark_filled.png");
 }
