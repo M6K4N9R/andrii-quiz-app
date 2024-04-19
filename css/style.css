@@ -35,16 +35,11 @@ p {
   margin: calc(3.6rem + 5rem) auto;
 }
 
-
 .answer-text {
   display: none;
 }
 
 /* === Form Page -----------------------------------------------*/
-
-.form-title {
-  margin-top: 80px;
-}
 
 .form-container {
   display: flex;
@@ -52,6 +47,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 8rem 0 8rem 0;
 }
 
 .form {
@@ -65,7 +61,8 @@ p {
   align-items: center;
   gap: 1.2rem;
   max-width: 90%;
-  /* border: none; */
+  margin: 0 auto;
+  border: none;
 }
 
 label {
