@@ -1,7 +1,5 @@
 .header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
   background-color: var(--acsent-color);
   color: white;
   padding: 1rem;
@@ -26,5 +24,3 @@ footer p {
   font-weight: bold;
   padding: 0.2rem;
 }
-
-
