@@ -61,10 +61,6 @@ p {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 90%;
 }
 
@@ -74,8 +70,12 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
+<<<<<<< HEAD
   max-width: 90%;
   /* border: none; */
+=======
+  border: none;
+>>>>>>> main
 }
 
 label {
@@ -85,8 +85,8 @@ label {
   align-self: flex-start;
 }
 
-textarea {
-  max-width: fit-content;
+.user-input {
+  width: 100%;
   font-size: 1.4rem;
 }
 
@@ -126,7 +126,11 @@ textarea {
   .form {
     max-width: 70%;
   }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> main
 /* ----------------- DESKTOP ---------------------*/
 
 @media screen and (min-width: 1025px) {
