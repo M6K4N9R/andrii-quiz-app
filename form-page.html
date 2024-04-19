@@ -13,11 +13,17 @@
     </header>
     <main class="form-container">
       <h2 id="form-title" class="form-title">Create your cards</h2>
-      <form aria-labelledby="form-title" method="get" class="form">
+      <form
+        aria-labelledby="form-title"
+        method="get"
+        class="form"
+        data-js="form"
+        name="form"
+      >
         <fieldset class="fieldset--user--input">
           <label for="user-question">Your question:</label>
           <textarea
-            name="user-question"
+            name="userQuestion"
             id="user-question"
             class="user-question"
             cols="30"
@@ -25,9 +31,12 @@
             maxlength="150"
             data-js="user-question-input"
           ></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
           <label for="user-answer">Your answer:</label>
           <textarea
-            name="user-answer"
+            name="userAnswer"
             id="user-answer"
             class="user-answer"
             cols="30"
@@ -35,11 +44,14 @@
             maxlength="150"
             data-js="user-answer-input"
           ></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left
+          </p>
           <label for="user-tags">Tag:</label>
           <p class="form--tag--description">(Separate by commas.)</p>
           <input
             type="text"
-            name="user-tags"
+            name="userTags"
             class="user-tags"
             data-js="user-tags-input"
           />

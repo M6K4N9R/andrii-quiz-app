@@ -81,6 +81,12 @@ textarea {
   font-size: 1.4rem;
 }
 
+.remaining-characters {
+  font-style: italic;
+  color: #696969;
+  align-self: flex-end;
+}
+
 .user-tags {
   width: 100%;
 }
@@ -110,7 +116,6 @@ textarea {
   .form {
     max-width: 70%;
   }
-
 }
 /* ----------------- DESKTOP ---------------------*/
 
