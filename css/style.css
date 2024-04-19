@@ -75,7 +75,7 @@ p {
   align-items: center;
   gap: 1.2rem;
   max-width: 90%;
-  border: none;
+  /* border: none; */
 }
 
 label {
@@ -116,7 +116,7 @@ textarea {
 
 /* ----------------- TABLET ---------------------*/
 
-@media screen and (min-width: 481px) {
+/* @media screen and (min-width: 481px) {
   .main-container {
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -126,7 +126,7 @@ textarea {
   .form {
     max-width: 70%;
   }
-}
+} */
 /* ----------------- DESKTOP ---------------------*/
 
 @media screen and (min-width: 1025px) {
