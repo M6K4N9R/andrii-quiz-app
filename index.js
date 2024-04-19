@@ -25,7 +25,6 @@ const onSubmit = (event) => {
   event.target.reset();
 };
 
-
 userQuestionInput.addEventListener("input", (e) => {
   characterLeftQuestion.textContent = MAX_LENGTH - e.target.value.length;
 });
@@ -35,6 +34,6 @@ userAnswerInput.addEventListener("input", (e) => {
 
 form.addEventListener("submit", onSubmit);
 
-
 /* =============================== Profile Page ============================= */
 
+/* just a comment */
