@@ -160,14 +160,18 @@ h3 {
 }
 
 .dark--mode--switch {
+  margin-top: 2rem;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   gap: 3rem;
 }
 
 .darkmode--button--text {
+  display: inline;
   font-size: 1.4rem;
+  margin-top: 0;
+  align-self: center;
 }
 
 /* =============================== RESPONSIVE ======================================= */

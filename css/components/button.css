@@ -10,23 +10,13 @@
   font-size: var(--button-text);
 }
 
-/* .button-container {
-  display: flex;
-  justify-content: flex-start;
-  position: relative;
-  width: 200px;
-  border: 1px solid var(--footer-color);
-  background-color: var(--primary-color);
-  border-radius: 9px;
-} */
-
 .dark--mode--button {
   position: relative;
   display: inline-block;
   width: 9rem;
   height: 3rem;
   margin: 0;
-  vertical-align: top;
+  vertical-align: center;
   background: #ffffff;
   border: 1px solid #bbc1e1;
   border-radius: 30px;
@@ -42,10 +32,10 @@
   content: "";
   display: inline-block;
   position: absolute;
-  left: 1px;
-  top: 0.5px;
+  left: 0.3px;
+  top: 0.3px;
   width: 6rem;
-  height: 2.8rem;
+  height: 2.9rem;
   background-color: var(--acsent-color);
   border-radius: 30px;
   transform: translateX(0);
@@ -53,7 +43,7 @@
 }
 
 .dark--mode--button:checked::after {
-  transform: translateX(2.9rem);
+  transform: translateX(2.7rem);
   background-color: var(--acsent-color);
 }
 .dark--mode--button:checked {
