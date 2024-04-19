@@ -39,6 +39,8 @@ p {
   display: none;
 }
 
+/* === Form Page -----------------------------------------------*/
+
 .form-title {
   margin-top: 80px;
 }
@@ -91,7 +93,77 @@ label {
   margin-top: 2rem;
 }
 
-/* ============== RESPONSIVE =============== */
+/* === Profile Page -----------------------------------------------------*/
+
+.profile--main {
+  width: 90%;
+  margin: 0 auto 40px auto;
+  height: 100vh;
+}
+
+.section,
+.dark--mode {
+  margin-top: 3rem;
+}
+
+.user--info--head {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user--info--head h2 {
+  font-size: 3.2rem;
+}
+
+.about--section--paragraph {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+.user--details {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.user--icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90px;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: 1px solid var(--question-color);
+  border-radius: 9px;
+}
+
+.user--icons img {
+  width: 24px;
+}
+
+.user--icons p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dark--mode--switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.dark--mode--switch p {
+  font-size: 1.4rem;
+}
+
+/* =============================== RESPONSIVE ======================================= */
 
 /* ----------------- TABLET ---------------------*/
 
@@ -104,6 +176,16 @@ label {
 
   .form {
     max-width: 70%;
+  }
+
+  .profile--main {
+    width: 80%;
+  }
+
+  .dark--mode--switch {
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: baseline;
   }
 }
 /* ----------------- DESKTOP ---------------------*/
@@ -123,5 +205,9 @@ label {
 
   .form {
     max-width: 50%;
+  }
+
+  .profile--main {
+    width: 50%;
   }
 }

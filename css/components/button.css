@@ -10,6 +10,15 @@
   font-size: var(--button-text);
 }
 
+.button--dark--mode {
+  background-color: var(--acsent-color);
+  padding: 0.5rem 2rem;
+  color: white;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 9px;
+  font-size: 1.4rem;
+}
+
 .bookmark {
   align-self: flex-end;
   background-color: transparent;
