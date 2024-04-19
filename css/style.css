@@ -97,7 +97,8 @@ label {
 
 .profile--main {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+  height: 100vh;
 }
 
 .section,
@@ -117,7 +118,7 @@ label {
   font-size: 3.2rem;
 }
 
-.about {
+.about--section--paragraph {
   margin-top: 1.5rem;
   font-size: 1.4rem;
 }
