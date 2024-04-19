@@ -19,10 +19,10 @@
 
 nav .home-page:hover,
 nav .about:hover,
-nav .bookmarks:hover {
+nav .bookmarks:hover,
+nav .form-page:hover {
   position: relative;
   bottom: 2px;
   background-size: cover;
   border-bottom: 2px solid var(--acsent-color);
 }
-

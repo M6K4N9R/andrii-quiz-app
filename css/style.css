@@ -39,6 +39,63 @@ p {
   display: none;
 }
 
+.form-title {
+  margin-top: 80px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.fieldset--user--input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 90%;
+  border: none;
+}
+
+label {
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+
+textarea {
+  max-width: fit-content;
+  font-size: 1.4rem;
+}
+
+.user-tags {
+  width: 100%;
+}
+
+.form--tag--description {
+  align-self: flex-start;
+  color: #696969;
+  margin-top: -1rem;
+  font-style: italic;
+}
+
+.submit-button {
+  margin-top: 2rem;
+}
+
 /* ============== RESPONSIVE =============== */
 
 /* ----------------- TABLET ---------------------*/
@@ -49,6 +106,11 @@ p {
     justify-content: space-evenly;
     width: 70%;
   }
+
+  .form {
+    max-width: 70%;
+  }
+
 }
 /* ----------------- DESKTOP ---------------------*/
 
@@ -63,5 +125,9 @@ p {
   .question-text {
     font-size: var(--question);
     text-align: center;
+  }
+
+  .form {
+    max-width: 50%;
   }
 }

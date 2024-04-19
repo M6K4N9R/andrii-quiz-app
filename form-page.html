@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andrii Quiz App</title>
+    <title>Form</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="index.js" defer></script>
   </head>
@@ -11,29 +11,41 @@
     <header class="header">
       <h1>Friends Quiz App</h1>
     </header>
-    <main>
-      <section class="main-container">
-        <article class="question-card --one">
-          <button class="bookmark" aria-label="Bookmark">
-            <img
-              src="./resources/bookmark_transparent.png"
-              alt="Bookmark this question"
-              class="bookmark-img"
-            />
-          </button>
-          <h2 class="question-text">
-            What is the name of the coffee shop where the Friends gang
-            frequently hangs out?
-          </h2>
-          <button class="show-answer">Show answer</button>
-          <p class="answer-text">Central Perk</p>
-          <ul class="tags">
-            <li class="seasons"># Season 1</li>
-            <li class="seasons"># Season 2</li>
-            <li class="seasons"># Season 3</li>
-          </ul>
-        </article>
-      </section>
+    <main class="form-container">
+      <h2 id="form-title" class="form-title">Create your cards</h2>
+      <form aria-labelledby="form-title" method="get" class="form">
+        <fieldset class="fieldset--user--input">
+          <label for="user-question">Your question:</label>
+          <textarea
+            name="user-question"
+            id="user-question"
+            class="user-question"
+            cols="30"
+            rows="10"
+            maxlength="150"
+            data-js="user-question-input"
+          ></textarea>
+          <label for="user-answer">Your answer:</label>
+          <textarea
+            name="user-answer"
+            id="user-answer"
+            class="user-answer"
+            cols="30"
+            rows="10"
+            maxlength="150"
+            data-js="user-answer-input"
+          ></textarea>
+          <label for="user-tags">Tag:</label>
+          <p class="form--tag--description">(Separate by commas.)</p>
+          <input
+            type="text"
+            name="user-tags"
+            class="user-tags"
+            data-js="user-tags-input"
+          />
+          <button type="submit" class="submit-button">Create your card</button>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <nav aria-labelledby="menu">
@@ -41,7 +53,7 @@
           <li class="home-page" id="menu">
             <a href="./index.html"
               ><img
-                src="./resources/home_filled.png"
+                src="./resources/home.png"
                 alt="Home button"
                 class="nav-icon"
             /></a>
@@ -57,7 +69,7 @@
           <li class="form-page" id="menu">
             <a href="./form-page.html"
               ><img
-                src="./resources/form.png"
+                src="./resources/form-filled.png"
                 alt="Form button"
                 class="nav-icon"
             /></a>
