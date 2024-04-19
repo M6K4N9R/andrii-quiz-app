@@ -22,6 +22,8 @@
             class="user-question"
             cols="30"
             rows="10"
+            maxlength="150"
+            data-js="user-question-input"
           ></textarea>
           <label for="user-answer">Your answer:</label>
           <textarea
@@ -30,10 +32,17 @@
             class="user-answer"
             cols="30"
             rows="10"
+            maxlength="150"
+            data-js="user-answer-input"
           ></textarea>
           <label for="user-tags">Tag:</label>
           <p class="form--tag--description">(Separate by commas.)</p>
-          <input type="text" name="user-tags" class="user-tags" />
+          <input
+            type="text"
+            name="user-tags"
+            class="user-tags"
+            data-js="user-tags-input"
+          />
           <button type="submit" class="submit-button">Create your card</button>
         </fieldset>
       </form>
