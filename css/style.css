@@ -162,11 +162,11 @@ h3 {
 .dark--mode--switch {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 3rem;
 }
 
-.dark--mode--switch p {
+.darkmode--button--text {
   font-size: 1.4rem;
 }
 

@@ -10,34 +10,54 @@
   font-size: var(--button-text);
 }
 
-.button-container {
-  /* display: flex;
-  justify-content: flex-start; */
+/* .button-container {
+  display: flex;
+  justify-content: flex-start;
   position: relative;
   width: 200px;
   border: 1px solid var(--footer-color);
   background-color: var(--primary-color);
   border-radius: 9px;
-}
-
-/* .button-container:active {
-  justify-content: flex-end;
-  transition: opacity 500ms ease-in-out 1s,
-    background-color 500ms ease-in-out 1s;
 } */
 
-.button--dark--mode {
+.dark--mode--button {
   position: relative;
-  background-color: var(--acsent-color);
-  padding: 0.5rem 2rem;
-  color: white;
-  border: 0.1rem solid var(--primary-color);
-  border-radius: 9px;
-  font-size: 1.4rem;
+  display: inline-block;
+  width: 9rem;
+  height: 3rem;
+  margin: 0;
+  vertical-align: top;
+  background: #ffffff;
+  border: 1px solid #bbc1e1;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
 }
-.button--dark--mode:active {
-  position: relative;
-  left: 77px;
+
+.dark--mode--button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 0.5px;
+  width: 6rem;
+  height: 2.8rem;
+  background-color: var(--acsent-color);
+  border-radius: 30px;
+  transform: translateX(0);
+  transition: 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+}
+
+.dark--mode--button:checked::after {
+  transform: translateX(2.9rem);
+  background-color: var(--acsent-color);
+}
+.dark--mode--button:checked {
+  background-color: #ffffff;
 }
 
 .bookmark {
