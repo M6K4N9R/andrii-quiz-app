@@ -10,13 +10,34 @@
   font-size: var(--button-text);
 }
 
+.button-container {
+  /* display: flex;
+  justify-content: flex-start; */
+  position: relative;
+  width: 200px;
+  border: 1px solid var(--footer-color);
+  background-color: var(--primary-color);
+  border-radius: 9px;
+}
+
+/* .button-container:active {
+  justify-content: flex-end;
+  transition: opacity 500ms ease-in-out 1s,
+    background-color 500ms ease-in-out 1s;
+} */
+
 .button--dark--mode {
+  position: relative;
   background-color: var(--acsent-color);
   padding: 0.5rem 2rem;
   color: white;
   border: 0.1rem solid var(--primary-color);
   border-radius: 9px;
   font-size: 1.4rem;
+}
+.button--dark--mode:active {
+  position: relative;
+  left: 77px;
 }
 
 .bookmark {
