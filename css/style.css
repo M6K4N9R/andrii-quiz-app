@@ -35,14 +35,6 @@ p {
   margin: calc(3.6rem + 5rem) auto;
 }
 
-.user__page__head {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  gap: 2rem;
-  margin: calc(3.6rem + 5rem) auto;
-}
 
 .answer-text {
   display: none;
@@ -184,7 +176,7 @@ h3 {
 
 /* ----------------- TABLET ---------------------*/
 
-/* @media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) {
   .main-container {
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -194,7 +186,8 @@ h3 {
   .form {
     max-width: 70%;
   }
-} */
+}
+
 /* ----------------- DESKTOP ---------------------*/
 
 @media screen and (min-width: 1025px) {
