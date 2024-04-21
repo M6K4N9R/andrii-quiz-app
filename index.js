@@ -1,3 +1,19 @@
+/* ========================= Home Page ==========================*/
+
+/*------- Toggle Button with toggle class-----------------------------------------*/
+
+// const bookmarkButton = document.querySelector(
+//   '[data-js="bookmark--toggle-button"]'
+// );
+// console.log(bookmarkButton);
+// bookmarkButton.addEventListener("click", () => {
+//   bookmarkButton.classList.toggle("bookmark--toggle-button");
+// });
+
+/*------- Toggle Button with toggle Attribute-----------------------------------------*/
+
+
+
 /* ========================= Form Page ==========================*/
 console.clear();
 

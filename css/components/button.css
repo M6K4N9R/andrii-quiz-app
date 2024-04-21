@@ -58,6 +58,12 @@
   top: -2.8rem;
 }
 
+.bookmark--toggle-button {
+  background-image: url(../../resources/bookmark_filled.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .bookmark img {
   width: 3rem;
 }
