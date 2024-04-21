@@ -67,73 +67,74 @@ userAnswerInput.addEventListener("input", (e) => {
   characterLeftAnswer.textContent = MAX_LENGTH - e.target.value.length;
 });
 
-function createUserCard() {
+// function createUserCard() {}
+
+const onSubmit = (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
   const newCard = document.createElement("article");
   newCard.classList.add("question-card");
   newCard.classList.add("user--card");
 
-  const newCardButtonShowAnswer = document.createElement("button");
-  newCardButtonShowAnswer.classList.add("bookmark");
-  newCardButtonShowAnswer.setAttribute("aria-label", "Bookmark");
-  newCardButtonShowAnswer.setAttribute("data-js", "bookmark--toggle-button");
+  const newCardBookmark = document.createElement("button");
+  newCardBookmark.classList.add("bookmark");
+  newCardBookmark.setAttribute("aria-label", "Bookmark");
+  newCardBookmark.setAttribute("data-js", "bookmark--toggle-button");
 
-  const newCardImage = document.createElement("img");
-  newCardImage.classList.add("bookmark-img");
-  newCardImage.setAttribute("src", "./resources/bookmark_transparent.png");
-  newCardImage.setAttribute("alt", "Bookmark this question");
-  newCardImage.setAttribute("data-js", "bookmark--toggle-img");
+  const newCardBookmarkImage = document.createElement("img");
+  newCardBookmarkImage.classList.add("bookmark-img");
+  newCardBookmarkImage.setAttribute(
+    "src",
+    "./resources/bookmark_transparent.png"
+  );
+  newCardBookmarkImage.setAttribute("alt", "Bookmark this question");
+  newCardBookmarkImage.setAttribute("data-js", "bookmark--toggle-img");
 
   const newCardQuestionText = document.createElement("h2");
   newCardQuestionText.classList.add("question-text");
-  newCardQuestionText.textContent = data.userQuestion.value;
+  newCardQuestionText.textContent = data.userQuestion;
 
-  const newCardButtonHideAnswer = document.createElement("button");
-  newCardButtonHideAnswer.classList.add("show-answer");
-  newCardButtonHideAnswer.setAttribute("data-js", "button--answer--hidden");
-  newCardButtonHideAnswer.textContent = "Show answer";
+  const newCardButtonShowAnswer = document.createElement("button");
+  newCardButtonShowAnswer.classList.add("show-answer");
+  newCardButtonShowAnswer.setAttribute("data-js", "button--answer--hidden");
+  newCardButtonShowAnswer.textContent = "Show answer";
 
   const newCardAnswerText = document.createElement("p");
-  newCardAnswerText.classList.add("answer-text answer-text-hidden");
+  newCardAnswerText.classList.add("answer-text");
+  newCardAnswerText.classList.add("answer-text-hidden");
   newCardAnswerText.setAttribute("data-js", "answer-text-hidden");
-  newCardAnswerText.textContent = data.userAnswer.value;
+  newCardAnswerText.textContent = data.userAnswer;
 
   const newCardUnorderedList = document.createElement("ul");
   newCardUnorderedList.classList.add("tags");
 
   const newCardListTag1 = document.createElement("li");
   newCardListTag1.classList.add("seasons");
-  newCardListTag1.textContent = "# Season 1";
+  newCardListTag1.textContent = data.userTags;
 
   const newCardListTag2 = document.createElement("li");
   newCardListTag2.classList.add("seasons");
-  newCardListTag2.textContent = "# Season 2";
+  newCardListTag2.textContent = data.userTags;
 
   const newCardListTag3 = document.createElement("li");
   newCardListTag3.classList.add("seasons");
-  newCardListTag3.textContent = "# Season 3";
+  newCardListTag3.textContent = data.userTags;
 
-  newCardListTag1.append(newCardUnorderedList);
-  newCardListTag2.append(newCardUnorderedList);
-  newCardListTag3.append(newCardUnorderedList);
+  newCardBookmark.append(newCardBookmarkImage);
+  newCardUnorderedList.append(newCardListTag1);
+  newCardUnorderedList.append(newCardListTag2);
+  newCardUnorderedList.append(newCardListTag3);
 
-  newCardButtonShowAnswer.append(newCard);
-  newCardImage.append(newCard);
-  newCardQuestionText.append(newCard);
-  newCardButtonHideAnswer.append(newCard);
-  newCardAnswerText.append(newCard);
-  newCardUnorderedList.append(newCard);
+  newCard.append(newCardBookmark);
+  newCard.append(newCardQuestionText);
+  newCard.append(newCardButtonShowAnswer);
+  newCard.append(newCardAnswerText);
+  newCard.append(newCardUnorderedList);
 
-  newCard.append(userCardContainer);
-}
-
-const onSubmit = (event, callback) => {
-  event.preventDefault();
-
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-
-  createUserCard;
-  console.log(data);
+  userCardContainer.append(newCard);
 
   event.target.reset();
 };
