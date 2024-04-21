@@ -1,6 +1,6 @@
 /* ========================= Home Page ==========================*/
 
-/*------- Toggle Button with toggle class-----------------------------------------*/
+/*------- Toggle Button with toggle class just for practice --------------------------*/
 
 // const bookmarkButton = document.querySelector(
 //   '[data-js="bookmark--toggle-button"]'
