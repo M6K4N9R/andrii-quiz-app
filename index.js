@@ -35,6 +35,11 @@ const showAnswerText = document.querySelector('[data-js="answer-text-hidden"]');
 
 showAnswerButton.addEventListener("click", () => {
   showAnswerText.classList.toggle("answer-text-hidden");
+  showAnswerButton.textContent = showAnswerButton.textContent.includes(
+    "Show answer"
+  )
+    ? "Hide answer"
+    : "Show answer";
 });
 
 /* ========================= Form Page ==========================*/
