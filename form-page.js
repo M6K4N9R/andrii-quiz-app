@@ -1,6 +1,6 @@
-
-
 /* ========================= Form Page ==========================*/
+
+/* ==== Create a card -------------------------------------------*/
 
 const userCardContainer = document.querySelector(
   '[data-js="user--cards--container"]'
@@ -99,5 +99,16 @@ const onSubmit = (event) => {
 
 form.addEventListener("submit", onSubmit);
 
-/* =============================== Fin ============================= */
+/* ===== Add functionality to buttons -----------------------------*/
 
+newCardBookmark.addEventListener("click", () => {
+  const currentSource = newCardBookmarkImage.getAttribute("src");
+  const newSource = currentSource.includes(
+    "./resources/bookmark_transparent.png"
+  )
+    ? "./resources/bookmark_filled.png"
+    : "./resources/bookmark_transparent.png";
+  newCardBookmarkImage.setAttribute("src", newSource);
+});
+
+/* =============================== Fin ============================= */
