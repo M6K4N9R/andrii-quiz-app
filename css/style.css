@@ -60,8 +60,20 @@ p {
   margin: 8rem 0 8rem 0;
 }
 
+.user--cards--container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  min-height: 100vh;
+  gap: 2rem;
+  margin: 1rem auto;
+}
+
 .form {
   width: 90%;
+  margin-bottom: 1rem;
 }
 
 .fieldset--user--input {
@@ -189,7 +201,8 @@ h3 {
 /* ----------------- TABLET ---------------------*/
 
 @media screen and (min-width: 481px) {
-  .main-container {
+  .main-container,
+  .user--cards--container {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 70%;
@@ -203,11 +216,12 @@ h3 {
 /* ----------------- DESKTOP ---------------------*/
 
 @media screen and (min-width: 1025px) {
-  .main-container {
+  .main-container,
+  .user--cards--container {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 60%;
-    margin: calc(3.6rem + 5rem) auto;
+    margin: 1rem auto;
   }
 
   .question-text {
