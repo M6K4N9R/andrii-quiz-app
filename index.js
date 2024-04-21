@@ -26,6 +26,17 @@ bookmarkButton.addEventListener("click", () => {
   toggledImage.setAttribute("src", newSource);
 });
 
+/*------- Show Answer Text Feature --------------------------------------------------*/
+
+const showAnswerButton = document.querySelector(
+  '[data-js="button--answer--hidden"]'
+);
+const showAnswerText = document.querySelector('[data-js="answer-text-hidden"]');
+
+showAnswerButton.addEventListener("click", () => {
+  showAnswerText.classList.toggle("answer-text-hidden");
+});
+
 /* ========================= Form Page ==========================*/
 console.clear();
 

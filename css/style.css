@@ -10,6 +10,8 @@
 
 @import "./components/navigation.css";
 
+/* === Home Page -----------------------------------------------*/
+
 h1 {
   font-size: 3.6rem;
 }
@@ -35,8 +37,16 @@ p {
   margin: calc(3.6rem + 5rem) auto;
 }
 
-.answer-text {
+.answer-text-hidden {
   display: none;
+}
+
+.answer-text {
+  font-size: var(--answer);
+}
+
+.answer-text-show {
+  display: block;
 }
 
 /* === Form Page -----------------------------------------------*/
