@@ -9,6 +9,10 @@
   width: 90%;
 }
 
+.user--card {
+  margin-top: 2rem;
+}
+
 .tags {
   margin-top: 2rem;
   padding-left: 1rem;

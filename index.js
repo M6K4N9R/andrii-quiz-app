@@ -113,15 +113,15 @@ const onSubmit = (event) => {
 
   const newCardListTag1 = document.createElement("li");
   newCardListTag1.classList.add("seasons");
-  newCardListTag1.textContent = data.userTags;
+  newCardListTag1.textContent = `# ${data.userTags}`;
 
   const newCardListTag2 = document.createElement("li");
   newCardListTag2.classList.add("seasons");
-  newCardListTag2.textContent = data.userTags;
+  newCardListTag2.textContent = `# ${data.userTags}`;
 
   const newCardListTag3 = document.createElement("li");
   newCardListTag3.classList.add("seasons");
-  newCardListTag3.textContent = data.userTags;
+  newCardListTag3.textContent = `# ${data.userTags}`;
 
   newCardBookmark.append(newCardBookmarkImage);
   newCardUnorderedList.append(newCardListTag1);
