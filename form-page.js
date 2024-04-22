@@ -22,12 +22,11 @@ userQuestionInput.addEventListener("input", (e) => {
   // /* ----------Trying something new here
 
   if (userQuestionInput.value.length > 0) {
-    userQuestionInput.style.backgroundColor = "#4f1271";
-    userQuestionInput.style.transition = "all 0.2s ease-in-out";
-    userQuestionInput.style.color = "#c8c6d7";
-    userQuestionInput.style.borderRadius = "9px";
-    userQuestionInput.style.textAlign = "center";
-    userQuestionInput.style.padding = "1rem";
+    userQuestionInput.setAttribute("rows", 10);
+    userQuestionInput.classList.add("input--custom--styling");
+  } else {
+    userQuestionInput.setAttribute("rows", 1);
+    userQuestionInput.classList.remove("input--custom--styling");
   }
 
   // Finish trying -------------- */
