@@ -18,7 +18,7 @@
 }
 
 .nav--item {
-  transition: all 0.2s ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .nav--item:hover {

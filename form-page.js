@@ -19,6 +19,19 @@ const characterLeftAnswer = document.querySelector(
 const MAX_LENGTH = 150;
 
 userQuestionInput.addEventListener("input", (e) => {
+  // /* ----------Trying something new here
+
+  if (userQuestionInput.value.length > 0) {
+    userQuestionInput.style.backgroundColor = "#4f1271";
+    userQuestionInput.style.transition = "all 0.2s ease-in-out";
+    userQuestionInput.style.color = "#c8c6d7";
+    userQuestionInput.style.borderRadius = "9px";
+    userQuestionInput.style.textAlign = "center";
+    userQuestionInput.style.padding = "1rem";
+  }
+
+  // Finish trying -------------- */
+
   characterLeftQuestion.textContent = MAX_LENGTH - e.target.value.length;
 });
 userAnswerInput.addEventListener("input", (e) => {
