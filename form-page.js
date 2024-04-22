@@ -1,6 +1,6 @@
-
-
 /* ========================= Form Page ==========================*/
+
+/* ==== Create a card -------------------------------------------*/
 
 const userCardContainer = document.querySelector(
   '[data-js="user--cards--container"]'
@@ -51,6 +51,18 @@ const onSubmit = (event) => {
   newCardBookmarkImage.setAttribute("alt", "Bookmark this question");
   newCardBookmarkImage.setAttribute("data-js", "bookmark--toggle-img");
 
+  /* ===== Add functionality to Bookmark -----------------------------*/
+
+  newCardBookmark.addEventListener("click", () => {
+    const currentSource = newCardBookmarkImage.getAttribute("src");
+    const newSource = currentSource.includes(
+      "./resources/bookmark_transparent.png"
+    )
+      ? "./resources/bookmark_filled.png"
+      : "./resources/bookmark_transparent.png";
+    newCardBookmarkImage.setAttribute("src", newSource);
+  });
+
   const newCardQuestionText = document.createElement("h2");
   newCardQuestionText.classList.add("question-text");
   newCardQuestionText.textContent = data.userQuestion;
@@ -65,6 +77,15 @@ const onSubmit = (event) => {
   newCardAnswerText.classList.add("answer-text-hidden");
   newCardAnswerText.setAttribute("data-js", "answer-text-hidden");
   newCardAnswerText.textContent = data.userAnswer;
+
+  /* ===== Add functionality to Show Answer -----------------------------*/
+
+  newCardButtonShowAnswer.addEventListener("click", () => {
+    newCardAnswerText.classList.toggle("answer-text-hidden");
+    newCardButtonShowAnswer.textContent.includes("Show answer")
+      ? (newCardButtonShowAnswer.textContent = "Hide answer")
+      : (newCardButtonShowAnswer.textContent = "Show answer");
+  });
 
   const newCardUnorderedList = document.createElement("ul");
   newCardUnorderedList.classList.add("tags");
@@ -100,4 +121,3 @@ const onSubmit = (event) => {
 form.addEventListener("submit", onSubmit);
 
 /* =============================== Fin ============================= */
-
