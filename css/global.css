@@ -23,6 +23,9 @@ html {
   --answer-color: #783f8e;
   --footer-color: #4a4063;
   --acsent-color: #4f1271;
+  --light-mode-text: #282828;
+  --dark-mode-background: #180e47;
+  --dark-mode-text: #e5e3d6;
 
   /* ------ FONT ------ */
   --question: 2.4rem;
