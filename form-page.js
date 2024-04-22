@@ -19,9 +19,32 @@ const characterLeftAnswer = document.querySelector(
 const MAX_LENGTH = 150;
 
 userQuestionInput.addEventListener("input", (e) => {
+  // /* ----------Trying something new here
+
+  if (userQuestionInput.value.length > 0) {
+    userQuestionInput.setAttribute("rows", 10);
+    userQuestionInput.classList.add("input--custom--styling");
+  } else {
+    userQuestionInput.setAttribute("rows", 1);
+    userQuestionInput.classList.remove("input--custom--styling");
+  }
+
+  // Finish trying -------------- */
+
   characterLeftQuestion.textContent = MAX_LENGTH - e.target.value.length;
 });
 userAnswerInput.addEventListener("input", (e) => {
+  // /* ----------Trying something new here
+
+  if (userAnswerInput.value.length > 0) {
+    userAnswerInput.setAttribute("rows", 10);
+    userAnswerInput.classList.add("input--custom--styling");
+  } else {
+    userAnswerInput.setAttribute("rows", 1);
+    userAnswerInput.classList.remove("input--custom--styling");
+  }
+
+  // Finish trying -------------- */
   characterLeftAnswer.textContent = MAX_LENGTH - e.target.value.length;
 });
 
@@ -120,6 +143,10 @@ const onSubmit = (event) => {
   event.target.reset();
   characterLeftQuestion.textContent = MAX_LENGTH;
   characterLeftAnswer.textContent = MAX_LENGTH;
+  userAnswerInput.rows = 1;
+  userAnswerInput.classList.remove("input--custom--styling");
+  userQuestionInput.rows = 1;
+  userQuestionInput.classList.remove("input--custom--styling");
 };
 
 form.addEventListener("submit", onSubmit);

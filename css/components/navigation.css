@@ -17,10 +17,11 @@
   height: 2.5rem;
 }
 
-nav .home-page:hover,
-nav .about:hover,
-nav .bookmarks:hover,
-nav .form-page:hover {
+.nav--item {
+  transition: all 500ms ease-in-out;
+}
+
+.nav--item:hover {
   position: relative;
   bottom: 2px;
   background-size: cover;
