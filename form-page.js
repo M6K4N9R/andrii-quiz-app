@@ -1,6 +1,6 @@
 /* ========================= Form Page ==========================*/
 
-/* ==== Create a card -------------------------------------------*/
+/* ==== Character Count -------------------------------------------*/
 
 const userCardContainer = document.querySelector(
   '[data-js="user--cards--container"]'
@@ -25,7 +25,7 @@ userAnswerInput.addEventListener("input", (e) => {
   characterLeftAnswer.textContent = MAX_LENGTH - e.target.value.length;
 });
 
-// function createUserCard() {}
+/* ==== Create a card -------------------------------------------*/
 
 const onSubmit = (event) => {
   event.preventDefault();
@@ -62,6 +62,7 @@ const onSubmit = (event) => {
       : "./resources/bookmark_transparent.png";
     newCardBookmarkImage.setAttribute("src", newSource);
   });
+  /*===================================================================*/
 
   const newCardQuestionText = document.createElement("h2");
   newCardQuestionText.classList.add("question-text");
@@ -86,6 +87,7 @@ const onSubmit = (event) => {
       ? (newCardButtonShowAnswer.textContent = "Hide answer")
       : (newCardButtonShowAnswer.textContent = "Show answer");
   });
+  /*===================================================================*/
 
   const newCardUnorderedList = document.createElement("ul");
   newCardUnorderedList.classList.add("tags");
@@ -116,6 +118,8 @@ const onSubmit = (event) => {
   userCardContainer.append(newCard);
 
   event.target.reset();
+  characterLeftQuestion.textContent = MAX_LENGTH;
+  characterLeftAnswer.textContent = MAX_LENGTH;
 };
 
 form.addEventListener("submit", onSubmit);

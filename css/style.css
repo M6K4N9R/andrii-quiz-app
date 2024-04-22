@@ -196,7 +196,13 @@ h3 {
   align-self: center;
 }
 
+.dark-mode-theme {
+  background-color: var(--dark-mode-background);
+  color: var(--dark-mode-text);
+}
+
 /* =============================== RESPONSIVE ======================================= */
+
 
 /* ----------------- TABLET ---------------------*/
 
